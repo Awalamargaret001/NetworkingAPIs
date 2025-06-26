@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnFetch" type="id" />
+    <item name="postTitleTextView" type="id" />
+    <item name="postBodyTextView" type="id" />
+    <item name="fetchDataButton" type="id" />
+</resources>

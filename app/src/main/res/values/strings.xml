@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NetworkingAPIs</string>
+    <string name="volley_error">Volley Error</string>
+</resources>

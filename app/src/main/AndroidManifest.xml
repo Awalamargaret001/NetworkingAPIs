@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.networkingapis"> <!-- IMPORTANT: Replace 'com.example.yourappname' with your actual package name -->
+
+    <!-- This permission is crucial for making network requests -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NetworkingAPIs"> <!-- IMPORTANT: Replace 'Theme.YourAppName' with your actual app theme (e.g., Theme.NetworkingAPIs) -->
+
+        <!-- Declaration for MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            tools:ignore="MissingClass"> <!-- REQUIRED for apps targeting API level 31 (Android 12) or higher, to allow external apps/system to launch it -->
+            <intent-filter>
+                <!-- This action makes it the main entry point of the app -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- This category ensures it appears in the device's launcher (app drawer) -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- If you had other activities, they would be declared here, e.g.:
+        <activity android:name=".AnotherActivity" />
+        -->
+
+    </application>
+
+</manifest>
